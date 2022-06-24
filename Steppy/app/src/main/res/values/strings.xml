@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Steppy</string>
+    <string name="steps">STEPS</string>
+    <string name="stepNumber">6000</string>
+    <string name="actionBarText">Steppy!</string>
+    <string name="kilometers">5.4 kilometers</string>
+    <string name="cal">300 kcal</string>
+    <string name="time">2+ hours</string>
+    <string name="motivation">Add the steps to your map, keep winning!</string>
+    <string name="addToMap">ADD TO MAP</string>
+
+</resources>

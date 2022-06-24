@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <!--- Renkleeerrr -->
+    <color name="anaRenk">#ff8f00</color>
+    <color name="anaAcikRenk">#ffc046</color>
+    <color name="anaKoyuRenk">#c56000</color>
+    <color name="ikincilRenk">#ffeb3b</color>
+    <color name="ikincilAcikRenk">#ffff72</color>
+    <color name="ikincilKoyuRenk">#c8b900</color>
+    <color name="metinRengiBir">#000000</color>
+    <color name="metinRengiIki">#000000</color>
+    <color name="birDigerKoyuRenk">#b53d00</color>
+
+
+
+</resources>
