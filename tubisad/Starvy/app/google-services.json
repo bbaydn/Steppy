@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "565462592558",
+    "project_id": "starvyy-621ec",
+    "storage_bucket": "starvyy-621ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565462592558:android:7d53c1ba624969b70ec3bf",
+        "android_client_info": {
+          "package_name": "com.busra.starvy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565462592558-omlcn6hmukk6s6hlditromts55joqpar.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.busra.starvy",
+            "certificate_hash": "86f93c9cdd9d42dd5094dad120da1f057bcacc7d"
+          }
+        },
+        {
+          "client_id": "565462592558-jh1s1c082i2ofctevkar2m0epam4thl0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEY3KEIdTXHd2Fu_1E2KBXpYnqX9_8DPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565462592558-jh1s1c082i2ofctevkar2m0epam4thl0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

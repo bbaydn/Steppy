@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    tools:context=".LoginActivity">
+
+
+    <!--- email -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@id/emailTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_address"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <!-- password -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailTil"
+        android:layout_marginTop="10dp"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/parola"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordTil"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/buttonarkaplan"
+        android:text="@string/giris"
+        tools:ignore="InvalidId,TextContrastCheck" />
+
+    <!-- Signup Text -->
+    <TextView
+        android:id="@+id/notHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/notHaveAccount" />
+
+    <!-- SignUp Button -->
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/notHaveAccount"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/buttonarkaplanwhite"
+        android:text="@string/uye_ol"
+        android:textColor="@color/black"
+        tools:ignore="TextContrastCheck" />
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="239dp"
+        android:layout_height="253dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="87dp"
+        android:contentDescription="@string/logo"
+        app:srcCompat="@drawable/stepy"
+        tools:ignore="ImageContrastCheck" />
+
+
+</RelativeLayout>

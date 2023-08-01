@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_nav"
+    app:startDestination="@id/girisEkraniFragment">
+
+    <fragment
+        android:id="@+id/girisEkraniFragment"
+        android:name="com.busra.starvy.fragments.GirisEkraniFragment"
+        android:label="fragment_giris_ekrani"
+        tools:layout="@layout/fragment_giris_ekrani" >
+        <action
+            android:id="@+id/kayitGecis"
+            app:destination="@id/kayitEkraniFragment" />
+        <action
+            android:id="@+id/anasayfaGecis"
+            app:destination="@id/anasayfaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kayitEkraniFragment"
+        android:name="com.busra.starvy.fragments.KayitEkraniFragment"
+        android:label="fragment_kayit_ekrani"
+        tools:layout="@layout/fragment_kayit_ekrani" >
+        <action
+            android:id="@+id/girisGecis"
+            app:destination="@id/girisEkraniFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.busra.starvy.fragments.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/action_anasayfaFragment_to_yemekDetayFragment"
+            app:destination="@id/yemekDetayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yemekDetayFragment"
+        android:name="com.busra.starvy.fragments.YemekDetayFragment"
+        android:label="fragment_yemek_detay"
+        tools:layout="@layout/fragment_yemek_detay" >
+        <argument
+            android:name="yemek"
+            app:argType="com.busra.starvy.data.Yemekler" />
+    </fragment>
+</navigation>

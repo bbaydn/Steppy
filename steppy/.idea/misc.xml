@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Denemeler/steppy/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.196" />
+        <entry key="..\:/Denemeler/steppy/app/src/main/res/drawable/bluebutton.xml" value="0.1535" />
+        <entry key="..\:/Denemeler/steppy/app/src/main/res/drawable/circle.xml" value="0.2865" />
+        <entry key="..\:/Denemeler/steppy/app/src/main/res/drawable/ic_launcher_background.xml" value="0.196" />
+        <entry key="..\:/Denemeler/steppy/app/src/main/res/drawable/whitebutton.xml" value="0.1535" />
+        <entry key="..\:/Denemeler/steppy/app/src/main/res/layout/activity_home.xml" value="0.35260416666666666" />
+        <entry key="..\:/Denemeler/steppy/app/src/main/res/layout/activity_login.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

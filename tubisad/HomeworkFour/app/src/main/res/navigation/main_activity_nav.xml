@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.busra.homeworkfour.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/sayfaAGecis"
+            app:destination="@id/sayfaAFragment" />
+        <action
+            android:id="@+id/sayfaBGecis"
+            app:destination="@id/sayfaBFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sayfaAFragment"
+        android:name="com.busra.homeworkfour.SayfaAFragment"
+        android:label="fragment_sayfa_a"
+        tools:layout="@layout/fragment_sayfa_a" >
+        <action
+            android:id="@+id/sayfaXGecis"
+            app:destination="@id/sayfaXFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sayfaBFragment"
+        android:name="com.busra.homeworkfour.SayfaBFragment"
+        android:label="fragment_sayfa_b"
+        tools:layout="@layout/fragment_sayfa_b" >
+        <action
+            android:id="@+id/bdenYyeGecis"
+            app:destination="@id/sayfaYFragment"
+            app:popUpTo="@id/sayfaBFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/sayfaXFragment"
+        android:name="com.busra.homeworkfour.SayfaXFragment"
+        android:label="fragment_sayfa_x"
+        tools:layout="@layout/fragment_sayfa_x" >
+        <action
+            android:id="@+id/xtenYyeGecis"
+            app:destination="@id/sayfaYFragment"
+            app:popUpTo="@id/sayfaXFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/sayfaYFragment"
+        android:name="com.busra.homeworkfour.SayfaYFragment"
+        android:label="fragment_sayfa_y"
+        tools:layout="@layout/fragment_sayfa_y" />
+</navigation>

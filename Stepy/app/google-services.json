@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "379098585296",
+    "project_id": "fir-login-signup-3d6ef",
+    "storage_bucket": "fir-login-signup-3d6ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379098585296:android:5ff1531c1edb11ea4f66d5",
+        "android_client_info": {
+          "package_name": "com.busra.stepy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "379098585296-e919731quafr456gndfubtfmi66inm91.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.busra.stepy",
+            "certificate_hash": "86f93c9cdd9d42dd5094dad120da1f057bcacc7d"
+          }
+        },
+        {
+          "client_id": "379098585296-paiqaa55p0v0716iobdlgaolc1ejmpbj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFA5njkQG-hssrW2WeKZStHwEzESj_pGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "379098585296-paiqaa55p0v0716iobdlgaolc1ejmpbj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

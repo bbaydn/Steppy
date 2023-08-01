@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.example.yemeksiparis.ui.fragment.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/detayGecis"
+            app:destination="@id/yemekDetayFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/anasayfaLoginGecis"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/anasayfaFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/yemekDetayFragment"
+        android:name="com.example.yemeksiparis.ui.fragment.YemekDetayFragment"
+        android:label="fragment_yemek_detay"
+        tools:layout="@layout/fragment_yemek_detay" >
+        <argument
+            android:name="yemek"
+            app:argType="com.example.yemeksiparis.data.entity.Yemekler" />
+    </fragment>
+    <fragment
+        android:id="@+id/sepetFragment"
+        android:name="com.example.yemeksiparis.ui.fragment.SepetFragment"
+        android:label="fragment_sepet"
+        tools:layout="@layout/fragment_sepet" >
+        <action
+            android:id="@+id/sepetAnasayfaGecis"
+            app:destination="@id/anasayfaFragment"
+            app:popUpTo="@id/sepetFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.yemeksiparis.ui.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/anasayfaGecis"
+            app:destination="@id/anasayfaFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/kayitGecis"
+            app:destination="@id/uyeOlFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uyeOlFragment"
+        android:name="com.example.yemeksiparis.ui.fragment.UyeOlFragment"
+        android:label="fragment_uye_ol"
+        tools:layout="@layout/fragment_uye_ol" >
+        <action
+            android:id="@+id/loginGecis"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/uyeOlFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/uyeOlAnasayfaGecis"
+            app:destination="@id/anasayfaFragment" />
+    </fragment>
+</navigation>

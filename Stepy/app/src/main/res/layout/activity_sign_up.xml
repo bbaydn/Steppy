@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:padding="20dp">
+
+    <!-- LOGO -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/emailTil"
+        android:background="@drawable/stepy"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginBottom="10dp"
+        android:contentDescription="TODO" />
+
+    <!--- email -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_above="@id/passwordTil"
+        android:layout_marginBottom="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailTil">
+
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+
+            tools:ignore="SpeakableTextPresentCheck"
+            android:autofillHints="" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <!--- password -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_above="@id/signUpButton">
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Parola"
+            android:inputType="textPassword"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- SignUp Button -->
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/uye_ol"
+        android:layout_above="@id/notHaveAccount"
+        android:layout_marginTop="20dp"
+        tools:ignore="InvalidId"
+        android:background="@drawable/buttonarkaplan"/>
+
+    <!-- Login Text -->
+    <TextView
+        android:id="@+id/notHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zaten bir hesabınız var mı?"
+        android:layout_above="@id/loginButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="110dp"
+        />
+
+    <!-- SignUp Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:background="@drawable/buttonarkaplanwhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/giris"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+
+</RelativeLayout>

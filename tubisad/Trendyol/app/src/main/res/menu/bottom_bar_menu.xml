@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homepageFragment"
+        android:icon="@drawable/homepage_clip"
+        android:title="@string/homepage" />
+    <item
+        android:id="@+id/goFragment"
+        android:icon="@drawable/go_clip"
+        android:title="@string/trendyol_go" />
+    <item
+        android:id="@+id/favoriteFragment"
+        android:icon="@drawable/favori_secilmemis"
+        android:title="@string/favorite" />
+    <item
+        android:id="@+id/cartFragment"
+        android:icon="@drawable/cart_clip"
+        android:title="@string/cart" />
+    <item
+        android:id="@+id/accountFragment"
+        android:icon="@drawable/account_clip"
+        android:title="@string/account" />
+</menu>

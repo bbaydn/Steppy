@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="notHaveAccount" type="id">notHaveAccount</item>
+    <item name="passwordEt" type="id">passwordEt</item>
+    <item name="emailTil" type="id">emailTil</item>
+</resources>

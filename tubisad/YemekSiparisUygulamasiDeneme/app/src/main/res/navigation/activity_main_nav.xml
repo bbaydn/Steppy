@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_nav"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.busra.yemeksiparisuygulamasideneme.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/yemekDetayGecis"
+            app:destination="@id/yemekDetayFragment" />
+        <action
+            android:id="@+id/sepetGecis"
+            app:destination="@id/sepetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yemekDetayFragment"
+        android:name="com.busra.yemeksiparisuygulamasideneme.YemekDetayFragment"
+        android:label="fragment_yemek_detay"
+        tools:layout="@layout/fragment_yemek_detay" >
+        <argument
+            android:name="yemekAd"
+            app:argType="string" />
+         />
+    </fragment>
+    <fragment
+        android:id="@+id/sepetFragment"
+        android:name="com.busra.yemeksiparisuygulamasideneme.SepetFragment"
+        android:label="fragment_sepet"
+        tools:layout="@layout/fragment_sepet" />
+    <fragment
+        android:id="@+id/girisFragment"
+        android:name="com.busra.yemeksiparisuygulamasideneme.GirisFragment"
+        android:label="fragment_giris"
+        tools:layout="@layout/fragment_giris" >
+        <action
+            android:id="@+id/anasayfaGecis"
+            app:destination="@id/anasayfaFragment" />
+        <action
+            android:id="@+id/sigupGecis"
+            app:destination="@id/kayitFragment" />
+        <argument
+            android:name="email"
+            app:argType="com.busra.yemeksiparisuygulamasideneme.data.entity.Kisiler" />
+    </fragment>
+    <fragment
+        android:id="@+id/kayitFragment"
+        android:name="com.busra.yemeksiparisuygulamasideneme.KayitFragment"
+        android:label="fragment_kayit"
+        tools:layout="@layout/fragment_kayit" >
+        <action
+            android:id="@+id/girisGecis"
+            app:destination="@id/girisFragment" />
+    </fragment>
+</navigation>

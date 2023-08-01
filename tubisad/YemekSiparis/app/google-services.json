@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "828545070259",
+    "project_id": "yemeksiparisgirisekrani",
+    "storage_bucket": "yemeksiparisgirisekrani.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828545070259:android:a7b12f14e00cffeaba6cc6",
+        "android_client_info": {
+          "package_name": "com.example.yemeksiparis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828545070259-le706fnu8p7popm3p5bt9svsiu5aagg3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIpn6aLhBAvZIfYbKADQjXMqa8RmcO2yk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828545070259-le706fnu8p7popm3p5bt9svsiu5aagg3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

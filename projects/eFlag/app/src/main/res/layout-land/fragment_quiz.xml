@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport = "true"
+    tools:context=".ui.fragments.QuizFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation= "vertical"
+        android:paddingBottom = "110dp"
+        android:gravity= "center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/turkey"
+            app:layout_constraintEnd_toEndOf="@id/guideline6"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/tvQuestion" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarQuiz"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/teal_700"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toTopOf="@id/guidelineTB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ProgressBar
+            android:id="@+id/progressBarTime"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:max="10"
+            android:progress="5"
+            app:layout_constraintStart_toStartOf="@id/guideline5"
+            app:layout_constraintEnd_toEndOf="@id/guideline6"
+            app:layout_constraintBottom_toBottomOf="@id/toolbarQuiz"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.19"
+            android:orientation="horizontal"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="52dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="357dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineHalf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFirst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Button"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineHalf"
+            app:layout_constraintStart_toStartOf="@id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/button_hint" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSecond"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Button"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guideline6"
+            app:layout_constraintStart_toEndOf="@+id/guidelineHalf"
+            app:layout_constraintTop_toBottomOf="@+id/button_hint" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvThird"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="3dp"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Button"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/guideline5"
+            app:layout_constraintEnd_toStartOf="@id/guidelineHalf"
+            app:layout_constraintTop_toBottomOf="@+id/tvFirst" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/tvForth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:layout_marginEnd="3dp"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Button"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guideline6"
+            app:layout_constraintStart_toEndOf="@+id/guidelineHalf"
+            app:layout_constraintTop_toBottomOf="@+id/tvSecond" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSubmit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="140dp"
+            android:background="@color/teal_700"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="SUBMIT"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guideline6"
+            app:layout_constraintStart_toStartOf="@id/guideline5"
+            app:layout_constraintTop_toBottomOf="@id/tvForth" />
+
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="TextView"
+            android:padding="5dp"
+            android:textSize="14sp"
+            app:fontFamily="@font/adamina"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarQuiz" />
+
+        <ImageView
+            android:id="@+id/ivThirdTry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/flag"
+            app:layout_constraintBottom_toTopOf="@+id/progressBarTime"
+            app:layout_constraintStart_toStartOf="@+id/guideline5" />
+
+        <ImageView
+            android:id="@+id/ivSecondTry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flag"
+            app:layout_constraintBottom_toTopOf="@+id/progressBarTime"
+            app:layout_constraintStart_toEndOf="@id/ivThirdTry"
+             />
+
+        <ImageView
+            android:id="@+id/ivFirstTry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flag"
+            app:layout_constraintBottom_toTopOf="@+id/progressBarTime"
+            app:layout_constraintStart_toEndOf="@id/ivSecondTry"
+             />
+
+        <ImageButton
+            android:id="@+id/button_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:background="@color/white"
+            android:src="@drawable/idea"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/teal_700"
+            android:src="@drawable/ic_baseline_all_out_24"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imageButton2"
+            app:layout_constraintEnd_toEndOf="@id/imageButton2"
+            app:layout_constraintTop_toTopOf="@id/imageButton2"
+            app:layout_constraintBottom_toBottomOf="@id/imageButton2"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="46dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
